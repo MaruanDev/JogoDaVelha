@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho 5</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+  <script src="ConfigJogoVelha.js"></script>
+  
+  <div class="header">
+
+  </head>
+  <body>
+    <button id="botao" onclick="mudarCor()">JOGO DA VELHA OVERRATED</button>
+  
+    <script>
+      function gerarCorAleatoria() {
+        // Gera um código hexadecimal aleatório para a cor
+        const letras = '0123456789ABCDEF';
+        let cor = '#';
+        for (let i = 0; i < 6; i++) {
+          cor += letras[Math.floor(Math.random() * 16)];
+        }
+        return cor;
+      }
+  
+      function mudarCor() {
+        const botao = document.getElementById("botao");
+        const novaCor = gerarCorAleatoria(); // Gera uma nova cor
+        botao.style.backgroundColor = novaCor; // Altera a cor do botão
+      }
+    </script>
+  </div>
+
+  <div class="row">
+
+    
+    <div class="col-3">
+      <img src="imagens/tabuleiro1.png" alt="imagem do tabuleiro">
+     
+      <div class="placar">
+        <p class="p"> VEZ DE JOGADOR <span id="placar-vez-de"></span> </p>
+      
+        <h1>Placar: </h1>
+        <p class="p">JOGADOR O: <span id="placar-jogador1">0</span></p>
+        <p class="p">JOGADOR X: <span id="placar-jogador2">0</span></p>
+        <p class="p">DEU VELHA: <span id="placar-velha">0</span></p>
+    </div>
+      <button class="btn btn-1"></button>
+      <button class="btn btn-2"></button>
+      <button class="btn btn-3"></button>
+      <button class="btn btn-4"></button>
+      <button class="btn btn-5"></button>
+      <button class="btn btn-6"></button>
+      <button class="btn btn-7"></button>
+      <button class="btn btn-8"></button>
+      <button class="btn btn-9"></button>
+    </div>
+  </div>
+  
+</body>
+
+</html>

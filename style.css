@@ -1,0 +1,211 @@
+* {
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+}
+
+body {
+  width: 99.4%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#botao {
+  padding: 10px 544.5px;
+  font-size: 18px;
+  background-color: #ffffff; /* Cor inicial */
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Suaviza a transição de cor */
+}
+
+#botao:hover {
+  opacity: 0.9; /* Leve transparência ao passar o mouse */
+}
+
+.col-3 {
+  position: relative;
+  display: flex; /* Ativa o Flexbox */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: space-around; /* Espaçamento horizontal */
+  height: 599px;
+  margin: 0;
+}
+
+.col-3 img {
+  width: 55%;
+  margin-top: 30px;
+  object-position: bottom;
+}
+
+/* Ajusta o botão para garantir um tamanho consistente */
+.btn {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0); /* Fundo semi-transparente */
+  border: 1px solid rgba(255, 10, 10, 0); /* Borda do botão */
+  padding: 0; /* Remove o padding, já que a imagem vai ocupar o espaço */
+  font-size: 16px; /* Tamanho do texto */
+  cursor: pointer; /* Mostra o ponteiro no hover */
+  z-index: 10; /* Garante que o botão fique sobre a imagem */
+  transform: translate(-50%, -50%); /* Centraliza o botão baseado em top/left */
+  width: 173px;   /* Define a largura do botão */
+  height: 146px;  /* Define a altura do botão */
+}
+
+/* Estilos da imagem dentro do botão */
+.btn img {
+  width: 100%;
+  margin-top: -1px;      /* A imagem vai ocupar 100% da largura do botão */
+  height: 100%; 
+  position: center;    /* A imagem vai ocupar 100% da altura do botão */
+  object-fit: contain;  /* Faz a imagem se ajustar sem distorcer */
+}
+
+.btn-1 {
+  top: 21.8%;
+  left: 15.7%;
+}
+
+.btn-2 {
+  top: 21.8%;
+  left: 28.6%;
+}
+
+.btn-3 {
+  top: 21.8%;
+  left: 41.5%;
+}
+
+.btn-4 {
+  top: 50.9%;
+  left: 15.7%;
+}
+
+.btn-5 {
+  top: 50.9%;
+  left: 28.6%;
+}
+
+.btn-6 {
+  top: 50.9%;
+  left: 41.5%;
+}
+
+.btn-7 {
+  top: 80.5%;
+  left: 15.7%;
+}
+
+.btn-8 {
+  top: 80.5%;
+  left: 28.6%;
+}
+
+.btn-9 {
+  top: 80.5%;
+  left: 41.5%;
+}
+
+
+.placar {
+  position: relative; /* Permite ajustar com top e transform */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  top: -30px;
+  font-size: 18px;
+}
+
+h2 {
+  padding-left: 16.5%;
+}
+
+.header {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  padding: 15px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.footer {
+  text-align: center;
+  padding: 1px;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Para dispositivos móveis */
+ 
+  body {
+    width: 94.6%;
+    overflow: hidden;
+  }
+  
+  #botao {
+    padding: 10px 101.9px;
+    background-color: #ff1313; /* Cor inicial */
+    color: rgb(0, 0, 0);
+  }
+
+
+  [class*="col-"] {
+    width: 100%; 
+  }
+
+  .placar {
+    top: 0; /* Reseta o deslocamento */
+  }
+
+  h2 {
+    padding-left: 20%;
+  }
+
+  .col-3 {
+    flex-direction: column; /* Empilha elementos na vertical */
+    height: auto;
+    height: 571px;
+  }
+
+  .col-3 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  /* Ajusta os botões para telas menores */
+  .btn {
+    width: 100px;   /* Ajusta a largura do botão para telas menores */
+    height: 113px;  /* Ajusta a altura do botão para telas menores */
+    font-size: 2vw; /* Tamanho da fonte proporcional à largura da tela */
+    padding: 0;    /* Remove o padding, já que a imagem vai ocupar o espaço */
+  }
+
+  /* Estilos da imagem dentro do botão */
+  .btn img {
+    width: 95%;      /* A imagem vai ocupar 100% da largura do botão */
+    height: 100%;     /* A imagem vai ocupar 100% da altura do botão */
+    object-fit: contain;  /* Ajusta a imagem sem distorcer */
+  }
+
+  /* Ajusta a posição dos botões para telas menores */
+  .btn-1 { top: 12.4%; left: 27.8%; }
+  .btn-2 { top: 12.4%; left: 50.8%; }
+  .btn-3 { top: 12.4%; left: 73.4%; }
+  .btn-4 { top: 31.4%; left: 28.4%; }
+  .btn-5 { top: 31.4%; left: 50.8%; }
+  .btn-6 { top: 31.4%; left: 73.4%; }
+  .btn-7 { top: 50.4%; left: 28.4%; }
+  .btn-8 { top: 50.4%; left: 50.8%; }
+  .btn-9 { top: 50.4%; left: 73.4%; }
+
+
+
+
+}
+
