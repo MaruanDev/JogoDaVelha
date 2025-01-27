@@ -10,7 +10,7 @@ body {
 }
 
 #botao {
-  padding: 10px 544.5px;
+  padding: 10px 720.5px;
   font-size: 18px;
   background-color: #ffffff; /* Cor inicial */
   color: rgb(0, 0, 0);
@@ -28,7 +28,7 @@ body {
   display: flex; /* Ativa o Flexbox */
   align-items: center; /* Alinha verticalmente */
   justify-content: space-around; /* Espaçamento horizontal */
-  height: 599px;
+  height: 750px;
   margin: 0;
 }
 
@@ -148,7 +148,7 @@ h2 {
   }
   
   #botao {
-    padding: 10px 101.9px;
+    padding: 10px 105.9px;
     background-color: #ff1313; /* Cor inicial */
     color: rgb(0, 0, 0);
   }
@@ -169,7 +169,7 @@ h2 {
   .col-3 {
     flex-direction: column; /* Empilha elementos na vertical */
     height: auto;
-    height: 571px;
+    height: 780px;
   }
 
   .col-3 img {
@@ -188,21 +188,21 @@ h2 {
 
   /* Estilos da imagem dentro do botão */
   .btn img {
-    width: 95%;      /* A imagem vai ocupar 100% da largura do botão */
+    width: 100%;      /* A imagem vai ocupar 100% da largura do botão */
     height: 100%;     /* A imagem vai ocupar 100% da altura do botão */
     object-fit: contain;  /* Ajusta a imagem sem distorcer */
   }
 
   /* Ajusta a posição dos botões para telas menores */
-  .btn-1 { top: 12.4%; left: 27.8%; }
-  .btn-2 { top: 12.4%; left: 50.8%; }
-  .btn-3 { top: 12.4%; left: 73.4%; }
-  .btn-4 { top: 31.4%; left: 28.4%; }
-  .btn-5 { top: 31.4%; left: 50.8%; }
-  .btn-6 { top: 31.4%; left: 73.4%; }
-  .btn-7 { top: 50.4%; left: 28.4%; }
-  .btn-8 { top: 50.4%; left: 50.8%; }
-  .btn-9 { top: 50.4%; left: 73.4%; }
+  .btn-1 { top: 14.4%; left: 27.8%; }
+  .btn-2 { top: 14.4%; left: 50.8%; }
+  .btn-3 { top: 14.4%; left: 73.4%; }
+  .btn-4 { top: 27.9%; left: 28.4%; }
+  .btn-5 { top: 27.9%; left: 50.8%; }
+  .btn-6 { top: 27.9%; left: 73.4%; }
+  .btn-7 { top: 42.4%; left: 28.4%; }
+  .btn-8 { top: 42.4%; left: 50.8%; }
+  .btn-9 { top: 42.4%; left: 73.4%; }
 
 
 
